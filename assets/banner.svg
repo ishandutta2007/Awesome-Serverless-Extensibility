@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9333ea" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.0" />
+    </linearGradient>
+
+    <filter id="blurFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40" />
+    </filter>
+
+    <style>
+      .glow-orbit {
+        transform-origin: center;
+        animation: rotateGlow 22s linear infinite;
+      }
+      .pulse-node {
+        animation: pulseEffect 3.5s ease-in-out infinite alternate;
+      }
+      .pulse-node-2 {
+        animation: pulseEffect 4.5s ease-in-out infinite alternate-reverse;
+      }
+      .dash-flow {
+        stroke-dasharray: 8 14;
+        animation: flowEffect 18s linear infinite;
+      }
+      .badge-glow {
+        animation: floatBadge 5s ease-in-out infinite alternate;
+      }
+      .badge-glow-2 {
+        animation: floatBadge 6s ease-in-out infinite alternate-reverse;
+      }
+      @keyframes rotateGlow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes flowEffect {
+        from { stroke-dashoffset: 400; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes pulseEffect {
+        0% { opacity: 0.35; transform: scale(0.96); }
+        100% { opacity: 0.75; transform: scale(1.04); }
+      }
+      @keyframes floatBadge {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-7px); }
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+      }
+      .sub-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+      }
+      .code-tag {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Background Layer -->
+  <rect width="1200" height="340" fill="url(#bgGrad)" />
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <g filter="url(#blurFilter)">
+    <circle cx="220" cy="110" r="140" fill="url(#glowGrad1)" class="pulse-node" />
+    <circle cx="980" cy="220" r="170" fill="url(#glowGrad2)" class="pulse-node-2" />
+    <circle cx="600" cy="280" r="120" fill="#6366f1" opacity="0.15" class="glow-orbit" />
+  </g>
+
+  <!-- Geometric Grid & Circuit Lines (Background) -->
+  <g stroke="#334155" stroke-opacity="0.35" stroke-width="1">
+    <line x1="0" y1="68" x2="1200" y2="68" />
+    <line x1="0" y1="136" x2="1200" y2="136" />
+    <line x1="0" y1="204" x2="1200" y2="204" />
+    <line x1="0" y1="272" x2="1200" y2="272" />
+    <line x1="200" y1="0" x2="200" y2="340" />
+    <line x1="400" y1="0" x2="400" y2="340" />
+    <line x1="600" y1="0" x2="600" y2="340" />
+    <line x1="800" y1="0" x2="800" y2="340" />
+    <line x1="1000" y1="0" x2="1000" y2="340" />
+  </g>
+
+  <!-- Dynamic Flow Rays across nodes -->
+  <g fill="none" stroke-width="1.8">
+    <path d="M 80 270 Q 320 80 620 180 T 1140 100" stroke="#38bdf8" stroke-opacity="0.4" class="dash-flow" />
+    <path d="M 120 70 Q 450 290 820 140 T 1120 280" stroke="#c084fc" stroke-opacity="0.3" class="dash-flow" style="animation-direction: reverse;" />
+  </g>
+
+  <!-- Network / Compute Nodes (Subtle Background Indicators) -->
+  <g fill="#0284c7" opacity="0.6">
+    <circle cx="320" cy="148" r="3" />
+    <circle cx="620" cy="180" r="4" />
+    <circle cx="820" cy="140" r="3.5" />
+    <circle cx="950" cy="110" r="3" />
+    <circle cx="250" cy="220" r="3" />
+  </g>
+
+  <!-- FOREGROUND LAYER: Content strictly positioned for high legibility -->
+  
+  <!-- Category Pill Badge -->
+  <g transform="translate(80, 48)">
+    <rect width="270" height="32" rx="16" fill="#1e293b" fill-opacity="0.8" stroke="#38bdf8" stroke-width="1.2" />
+    <circle cx="16" cy="16" r="4.5" fill="#38bdf8" />
+    <text x="30" y="21" fill="#e2e8f0" font-size="12" class="code-tag" letter-spacing="0.05em">AWESOME CURATED LIST</text>
+  </g>
+
+  <!-- Dynamic Status Chips (Right Aligned) -->
+  <g transform="translate(850, 48)" class="badge-glow">
+    <rect width="130" height="30" rx="15" fill="#1e1e38" fill-opacity="0.75" stroke="#818cf8" stroke-width="1" />
+    <text x="65" y="19" fill="#c7d2fe" font-size="11" class="code-tag" text-anchor="middle">⚡ EDGE FAAS</text>
+  </g>
+  <g transform="translate(995, 48)" class="badge-glow-2">
+    <rect width="125" height="30" rx="15" fill="#2d1537" fill-opacity="0.75" stroke="#f472b6" stroke-width="1" />
+    <text x="62" y="19" fill="#fbcfe8" font-size="11" class="code-tag" text-anchor="middle">🌐 WASM &amp; V8</text>
+  </g>
+
+  <!-- Main Hero Title -->
+  <text x="80" y="142" fill="url(#accentGrad)" font-size="44" class="title-text">Awesome Serverless Extensibility</text>
+
+  <!-- Subtitle Line 1 -->
+  <text x="80" y="185" fill="#f1f5f9" font-size="18" class="sub-text">
+    The Curated Directory of <tspan fill="#38bdf8" font-weight="600">FaaS Runtimes</tspan>, <tspan fill="#818cf8" font-weight="600">Edge Compute Engines</tspan>, &amp; <tspan fill="#c084fc" font-weight="600">Cloud Extensibility Platforms</tspan>
+  </text>
+
+  <!-- Subtitle Line 2 / Feature highlights -->
+  <text x="80" y="215" fill="#94a3b8" font-size="14.5" class="sub-text">
+    Benchmarking enterprise SaaS solutions &amp; open-source alternatives across WebAssembly, V8 Isolates, and Docker.
+  </text>
+
+  <!-- Interactive / Modern Feature Tags Row -->
+  <g transform="translate(80, 252)">
+    <!-- Tag 1 -->
+    <rect x="0" y="0" width="170" height="38" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+    <text x="18" y="23" fill="#38bdf8" font-size="13" class="code-tag">❖ Edge Functions</text>
+
+    <!-- Tag 2 -->
+    <rect x="185" y="0" width="165" height="38" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+    <text x="203" y="23" fill="#a78bfa" font-size="13" class="code-tag">⚙ Serverless FaaS</text>
+
+    <!-- Tag 3 -->
+    <rect x="365" y="0" width="160" height="38" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+    <text x="383" y="23" fill="#ec4899" font-size="13" class="code-tag">🚀 WASM Runtimes</text>
+
+    <!-- Tag 4 -->
+    <rect x="540" y="0" width="180" height="38" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+    <text x="558" y="23" fill="#34d399" font-size="13" class="code-tag">📦 Self-Hosted Stacks</text>
+
+    <!-- Tag 5 -->
+    <rect x="735" y="0" width="185" height="38" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+    <text x="753" y="23" fill="#fbbf24" font-size="13" class="code-tag">🔒 Sandbox Isolation</text>
+  </g>
+
+  <!-- Subtle Bottom Brand Accent Line -->
+  <rect x="0" y="336" width="1200" height="4" fill="url(#accentGrad)" />
+</svg>
