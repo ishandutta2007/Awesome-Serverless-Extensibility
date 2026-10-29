@@ -80,9 +80,9 @@ Self-hosted and open-source serverless runtimes offer complete data sovereignty,
 
 ### 🏆 Top Open-Source Runtimes Ranked by Popularity
 
-The table below lists leading open-source serverless frameworks, runtimes, and extensibility engines sorted in **descending order by GitHub star count**.
+The table below lists leading open-source serverless frameworks, runtimes, and extensibility engines sorted in **descending order by GitHub Stars_Count**.
 
-| Project | GitHub Stars ⭐ | Primary Language / Runtime 💻 | Architecture & Description 📌 |
+| Project | GitHub_Stars ⭐ | Primary Language / Runtime 💻 | Architecture & Description 📌 |
 | :--- | :---: | :--- | :--- |
 | **[Serverless Framework](https://github.com/serverless/serverless)** | [![Stars](https://img.shields.io/github/stars/serverless/serverless?style=social&color=white)](https://github.com/serverless/serverless/stargazers) | JavaScript / Node.js / Multi | The ubiquitous developer CLI and deployment framework for building, packaging, and managing serverless applications across AWS Lambda, Azure, and Google Cloud. |
 | **[OpenFaaS](https://github.com/openfaas/faas)** | [![Stars](https://img.shields.io/github/stars/openfaas/faas?style=social&color=white)](https://github.com/openfaas/faas/stargazers) | Go / Kubernetes / Docker | Enterprise-grade, Kubernetes-native FaaS that turns any container into a serverless function with built-in Prometheus auto-scaling and event gateway connectors. |
@@ -135,7 +135,7 @@ Contributions, bug reports, and suggestions are welcome! Help expand this server
 2. 🌿 **Create a branch** for your feature or additions (`git checkout -b feature/add-new-faas-platform`).
 3. 📝 Add your entry following the established table formats:
    - Provide verified starting paid pricing and specific free-tier limits.
-   - For open-source projects, specify the GitHub repo link and ensure the social star badge is included.
+   - For open-source projects, specify the GitHub repo link and ensure the social Stars_Badge is included.
 4. 🎯 Keep commentary strictly objective, engineering-focused, and factual.
 5. 🚀 **Open a Pull Request** with a concise summary of changes and official documentation references.
 
