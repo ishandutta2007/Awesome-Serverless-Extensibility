@@ -1,4 +1,4 @@
-# Awesome Serverless Extensibility
+# ⚡ Awesome Serverless Extensibility
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Serverless-Extensibility">
@@ -7,55 +7,60 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Serverless-Extensibility/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Serverless-Extensibility?style=social&color=white" alt="Repo Stars"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Serverless-Extensibility/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Serverless-Extensibility?style=social&color=white" alt="Repo Forks"></a>
-  <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Serverless-Extensibility/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Serverless-Extensibility"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg" alt="Maintained: Yes"></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 ---
 
-## Overview & Directory Scope
+## 📖 Overview & Directory Scope
 
-A curated directory and engineering landscape tracking top **SaaS platforms**, **edge runtimes**, and **open-source FaaS projects** for **Serverless Extensibility**. 
+A curated directory and engineering landscape tracking top **SaaS platforms** ☁️, **edge runtimes** ⚡, and **open-source FaaS projects** 🛠️ for **Serverless Extensibility**. 
 
 Serverless extensibility allows software architectures, SaaS platforms, and enterprise applications to execute custom business logic, event-driven workflows, and HTTP request mutations at the edge or in cloud isolation—without managing virtual machines or cluster nodes. It bridges the gap between turnkey SaaS apps and programmable infrastructure via WebAssembly (WASM), V8 sandboxes, containers, and serverless compute primitives.
 
-### Why Serverless Extensibility Matters
-- **Sub-5ms Execution Latency**: Moving compute to edge points of presence (PoPs) using V8 isolates and Wasmtime instead of heavyweight hypervisors.
-- **Micro-Billing & Elasticity**: Instant scale-to-zero when idle, scaling up linearly to tens of thousands of requests per second.
-- **Tenant Isolation**: Secure execution of untrusted user code via WebAssembly sandbox barriers and isolated V8 memory heaps.
-- **Ecosystem Customization**: Extending commerce checkout hooks, API gateways, reverse proxies, and auth workflows programmatically.
+### 🌟 Why Serverless Extensibility Matters
+- ⚡ **Sub-5ms Execution Latency**: Moving compute to edge points of presence (PoPs) using V8 isolates and Wasmtime instead of heavyweight hypervisors.
+- 📉 **Micro-Billing & Elasticity**: Instant scale-to-zero when idle, scaling up linearly to tens of thousands of requests per second.
+- 🔒 **Tenant Isolation**: Secure execution of untrusted user code via WebAssembly sandbox barriers and isolated V8 memory heaps.
+- 🔌 **Ecosystem Customization**: Extending commerce checkout hooks, API gateways, reverse proxies, and auth workflows programmatically.
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Hosted Extensibility Platforms](#saas--hosted-extensibility-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-  - [Top Open-Source Runtimes Ranked by Popularity](#top-open-source-runtimes-ranked-by-popularity)
-  - [Architectural Highlights & Use Cases](#architectural-highlights--use-cases)
-- [Key Selection Criteria](#key-selection-criteria)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer & License](#disclaimer--license)
-
----
-
-## Sector Overview & Market Dynamics
-
-The global serverless architecture and cloud extensibility market is estimated at **$21.3 billion in 2024–2025** and is projected to expand beyond **$65 billion by 2030 at a CAGR of ~22.7%**, driven by explosive enterprise adoption of edge computing, microservices, and AI inference pipelines.
-
-The market structure is **moderately concentrated among hyperscale cloud providers** (Amazon AWS, Microsoft Azure, Google Cloud) that control high-volume general compute, yet it exhibits **strong fragmentation and specialized multi-vendor growth at the edge layer**, where challengers like Cloudflare, Fastly, Vercel, Supabase, and Shopify capture high-margin niche workloads through superior developer experience (DX), sub-millisecond cold starts, and domain-tailored extensibility runtimes.
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Extensibility Platforms](#️-saas--hosted-extensibility-platforms)
+- [🛠️ Open-Source GitHub Projects](#️-open-source-github-projects)
+  - [🏆 Top Open-Source Runtimes Ranked by Popularity](#-top-open-source-runtimes-ranked-by-popularity)
+  - [💡 Architectural Highlights & Use Cases](#-architectural-highlights--use-cases)
+- [🎯 Key Selection Criteria](#-key-selection-criteria)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚖️ Disclaimer & License](#️-disclaimer--license)
 
 ---
 
-## SaaS & Hosted Extensibility Platforms
+## 📊 Sector Overview & Market Dynamics
+
+The global serverless architecture and cloud extensibility market is estimated at **$21.3 billion in 2024–2025** and is projected to expand beyond **$65 billion by 2030 at a CAGR of ~22.7%**, driven by explosive enterprise adoption of edge computing, microservices, and AI inference pipelines 📈.
+
+The market structure is **moderately concentrated among hyperscale cloud providers** (Amazon AWS, Microsoft Azure, Google Cloud) that control high-volume general compute, yet it exhibits **strong fragmentation and specialized multi-vendor growth at the edge layer**, where challengers like Cloudflare, Fastly, Vercel, Supabase, and Shopify capture high-margin niche workloads through superior developer experience (DX), sub-millisecond cold starts, and domain-tailored extensibility runtimes 🌐.
+
+---
+
+## ☁️ SaaS & Hosted Extensibility Platforms
 
 The following SaaS and managed cloud providers provide turnkey serverless extensibility. Companies are sorted in **descending order by company scale** (market capitalization / enterprise valuation / ARR).
 
-| Platform | Company Scale (Valuation / Market Cap) | Starting Paid Pricing | Free Tier / Trial Limits | Key Extensibility Strengths & Capabilities |
+| Platform | Company Scale (Valuation / Market Cap) 🏢 | Starting Paid Pricing 💳 | Free Tier / Trial Limits 🎁 | Key Extensibility Strengths & Capabilities ⚙️ |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Microsoft Azure Functions](https://azure.microsoft.com/en-us/products/functions)** | ~$3.1 Trillion Market Cap | $0.20 per 1M executions + $0.000016/GB-s (Flex Consumption starts at $0.017/vCPU-hr) | **1,000,000 requests/month free forever** + 400,000 GB-seconds resource consumption free per month; $200 Azure credit for 30-day initial trial | Deep integration with Azure Event Grid, Cosmos DB, and enterprise active directory; extensive polyglot language support (C#, Python, Java, Node.js). |
 | **[AWS Lambda](https://aws.amazon.com/lambda/)** | ~$2.0 Trillion Market Cap *(Amazon parent)* | $0.20 per 1M requests ($0.0000166667 per GB-s for x86; $0.0000133334 per GB-s for Arm Graviton2) | **1,000,000 requests/month free forever** + 3,200,000 seconds of compute time per month (up to 400,000 GB-seconds); perpetual tier | The industry gold standard for general FaaS; triggers on S3, DynamoDB streams, Kinesis, SQS, API Gateway; supports snapstart microVMs. |
@@ -69,15 +74,15 @@ The following SaaS and managed cloud providers provide turnkey serverless extens
 
 ---
 
-## Open-Source GitHub Projects
+## 🛠️ Open-Source GitHub Projects
 
 Self-hosted and open-source serverless runtimes offer complete data sovereignty, zero vendor lock-in, on-premises deployment compliance, and zero-cost local iteration.
 
-### Top Open-Source Runtimes Ranked by Popularity
+### 🏆 Top Open-Source Runtimes Ranked by Popularity
 
 The table below lists leading open-source serverless frameworks, runtimes, and extensibility engines sorted in **descending order by GitHub star count**.
 
-| Project | GitHub Stars | Primary Language / Runtime | Architecture & Description |
+| Project | GitHub Stars ⭐ | Primary Language / Runtime 💻 | Architecture & Description 📌 |
 | :--- | :---: | :--- | :--- |
 | **[Serverless Framework](https://github.com/serverless/serverless)** | [![Stars](https://img.shields.io/github/stars/serverless/serverless?style=social&color=white)](https://github.com/serverless/serverless/stargazers) | JavaScript / Node.js / Multi | The ubiquitous developer CLI and deployment framework for building, packaging, and managing serverless applications across AWS Lambda, Azure, and Google Cloud. |
 | **[OpenFaaS](https://github.com/openfaas/faas)** | [![Stars](https://img.shields.io/github/stars/openfaas/faas?style=social&color=white)](https://github.com/openfaas/faas/stargazers) | Go / Kubernetes / Docker | Enterprise-grade, Kubernetes-native FaaS that turns any container into a serverless function with built-in Prometheus auto-scaling and event gateway connectors. |
@@ -94,49 +99,67 @@ The table below lists leading open-source serverless frameworks, runtimes, and e
 
 ---
 
-### Architectural Highlights & Use Cases
+### 💡 Architectural Highlights & Use Cases
 
-- **For Cloudflare Workers drop-in compatibility**: Use [`cloudflare/workerd`](https://github.com/cloudflare/workerd) for pure low-level runtime parity or [`oldfriendme/localworker`](https://github.com/oldfriendme/localworker) for zero-configuration VPS and local developer testing.
-- **For WebAssembly (WASM) Component Model native execution**: Choose [`spinframework/spin`](https://github.com/spinframework/spin) or [`NamseEnt/fn0`](https://github.com/NamseEnt/fn0) for instant microsecond startups, compact binary distribution, and memory-safe sandboxing.
-- **For Kubernetes-native production clusters**: Deploy [`openfaas/faas`](https://github.com/openfaas/faas) or [`fission/fission`](https://github.com/fission/fission) to execute polyglot microservices without cloud provider lock-in.
-- **For Data Science, Stream Processing, & GPU acceleration**: Run [`nuclio/nuclio`](https://github.com/nuclio/nuclio) to achieve high throughput and low-latency processing over Kafka, Kinesis, and MQTT streams.
-- **For Docker-first portability**: Pick [`fnproject/fn`](https://github.com/fnproject/fn), allowing any Docker image to execute as a serverless function across hybrid clouds.
-- **For Full-stack BaaS + Serverless functions**: Adopt [`junobuild/juno`](https://github.com/junobuild/juno) for combined frontend hosting, storage, authentication, and execution with self-hosting autonomy.
+- ⚡ **For Cloudflare Workers drop-in compatibility**: Use [`cloudflare/workerd`](https://github.com/cloudflare/workerd) for pure low-level runtime parity or [`oldfriendme/localworker`](https://github.com/oldfriendme/localworker) for zero-configuration VPS and local developer testing.
+- 🦀 **For WebAssembly (WASM) Component Model native execution**: Choose [`spinframework/spin`](https://github.com/spinframework/spin) or [`NamseEnt/fn0`](https://github.com/NamseEnt/fn0) for instant microsecond startups, compact binary distribution, and memory-safe sandboxing.
+- ☸️ **For Kubernetes-native production clusters**: Deploy [`openfaas/faas`](https://github.com/openfaas/faas) or [`fission/fission`](https://github.com/fission/fission) to execute polyglot microservices without cloud provider lock-in.
+- 🚀 **For Data Science, Stream Processing, & GPU acceleration**: Run [`nuclio/nuclio`](https://github.com/nuclio/nuclio) to achieve high throughput and low-latency processing over Kafka, Kinesis, and MQTT streams.
+- 🐳 **For Docker-first portability**: Pick [`fnproject/fn`](https://github.com/fnproject/fn), allowing any Docker image to execute as a serverless function across hybrid clouds.
+- 📦 **For Full-stack BaaS + Serverless functions**: Adopt [`junobuild/juno`](https://github.com/junobuild/juno) for combined frontend hosting, storage, authentication, and execution with self-hosting autonomy.
 
 ---
 
-## Key Selection Criteria
+## 🎯 Key Selection Criteria
 
 When choosing a serverless extensibility runtime or platform for production systems, evaluate across these dimensions:
 
-1. **Cold Start Penalty**:
+1. ⏱️ **Cold Start Penalty**:
    - V8 Isolates (`workerd`, Cloudflare Workers): `< 5ms`
    - WebAssembly Modules (`Spin`, Fastly Compute): `< 1ms`
    - Containerized FaaS (`AWS Lambda`, `OpenFaaS`): `50ms – 800ms` (dependent on language runtime and package size)
-2. **Execution Sandboxing & Multi-tenancy**:
+2. 🛡️ **Execution Sandboxing & Multi-tenancy**:
    - Evaluate whether third parties or customers will be uploading arbitrary scripts. Wasmtime and V8 isolates provide hardware-efficient isolation boundaries without requiring a full virtual machine per function invocation.
-3. **Trigger Ecosystem**:
+3. 🔗 **Trigger Ecosystem**:
    - Verify native bindings for queues (SQS, Kafka, RabbitMQ), blob storage (S3, R2, GCS), relational/vector databases, and HTTP webhooks.
-4. **Data Locality & Edge State**:
+4. 📍 **Data Locality & Edge State**:
    - Ensure the runtime provides co-located KV caches, durable object state, or edge-replicated databases to prevent latency degradation when fetching remote state.
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
 Contributions, bug reports, and suggestions are welcome! Help expand this serverless extensibility reference:
 
-1. **Fork the repository** to your personal GitHub account.
-2. **Create a branch** for your feature or additions (`git checkout -b feature/add-new-faas-platform`).
-3. Add your entry following the established table formats:
+1. 🍴 **Fork the repository** to your personal GitHub account.
+2. 🌿 **Create a branch** for your feature or additions (`git checkout -b feature/add-new-faas-platform`).
+3. 📝 Add your entry following the established table formats:
    - Provide verified starting paid pricing and specific free-tier limits.
    - For open-source projects, specify the GitHub repo link and ensure the social star badge is included.
-4. Keep commentary strictly objective, engineering-focused, and factual.
-5. **Open a Pull Request** with a concise summary of changes and official documentation references.
+4. 🎯 Keep commentary strictly objective, engineering-focused, and factual.
+5. 🚀 **Open a Pull Request** with a concise summary of changes and official documentation references.
 
 ---
 
-## Disclaimer & License
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring and using **Awesome Serverless Extensibility**! 🙌
+
+If you found this curated list helpful for your project, architecture design, or evaluation of serverless runtimes, please consider:
+- ⭐ **Starring this repository** to show your support and help others discover it.
+- 🍴 **Forking and sharing** it with your fellow engineers, platform teams, and community.
+- ☕ **Buying a coffee & sponsoring ongoing maintenance**: Support development directly via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support keeps this directory updated with the latest FaaS runtimes, edge compute innovations, and enterprise benchmarks! 🚀
+
+---
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Serverless-Extensibility&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Serverless-Extensibility&type=date&legend=top-left)
+
+---
+
+## ⚖️ Disclaimer & License
 
 - This repository is a community-maintained curated knowledge base. All company names, logos, and registered trademarks belong to their respective owners.
 - Performance characteristics (cold start speeds, pricing tiers, and quotas) are subject to change by vendors; always refer to official documentation before making production architecture commitments.
